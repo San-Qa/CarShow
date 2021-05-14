@@ -17,8 +17,8 @@ public class UserService{
 	public UserService(UserRepository userepo) {
 		super();
 		this.userepo = userepo;
-	}
-
+	} 
+ 
 	public User createUser(User user) {
 		User create = this.userepo.save(user);
 		return create;
