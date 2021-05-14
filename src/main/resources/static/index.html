@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/aa5325d620.js" crossorigin="anonymous"></script>
+    <title>Crud</title>
+</head>
+<body>
+    <h1>Car Showroom</h1>
+    <div class="container">
+        <div class="datatable">
+            <table class="table">
+                <thead><tr></tr></thead>
+                <tbody></tbody>
+            </table>
+            
+        </div>
+        <button id ="Add" class="btn success open-modal">Add</button>
+        <div class="backdrop">
+            <div class="modal">
+                <div class="modal-title">
+                    <span class="text">Form</span>
+                    <button class="btn circle close-modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-user" novalidate>
+                        <fieldset class="form-group">
+                            <label for="name">name</label>
+                            <input class="form-control" name="name" id="name" type="text">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="model">model</label>
+                            <input class="form-control" name="model" id="model" type="text">
+                        </fieldset>
+                        <button id="Save" class="btn success">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/form-user.js"></script>
+</body>
+</html>

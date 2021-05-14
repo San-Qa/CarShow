@@ -1,0 +1,1 @@
+INSERT INTO `user` (`name`, `model`) VALUES ('BMW', 'M2');
